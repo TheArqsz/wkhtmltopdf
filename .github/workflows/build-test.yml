@@ -1,0 +1,30 @@
+name: Build & Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    # Skip job based on the commit message
+    if: contains(toJson(github.event.commits), '[skip build]') == false
+    name: Build & Test docker image
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v1
+      - name: Output Docker info
+        run: docker info
+      - name: Sets build date
+        run: echo "BUILD_DATE=$(date '+%Y%m%d')" >> $GITHUB_ENV
+      - name: Build docker image
+        run: make build
+        env:
+          VERSION: latest
+      - name: Test images
+        run: make test
+        env:
+          VERSION: latest
