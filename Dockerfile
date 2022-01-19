@@ -30,7 +30,10 @@ ENV DEBIAN_FRONTEND interactive
 
 FROM ubuntu:22.04 as runner
 
+COPY --from=builder /etc/fonts /etc/fonts
+COPY --from=builder /etc/X11 /etc/X11
 COPY --from=builder /usr/lib /usr/lib
+COPY --from=builder /usr/share /usr/share
 
 RUN ldconfig
 
