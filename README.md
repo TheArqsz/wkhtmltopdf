@@ -14,6 +14,11 @@ Repository for [thearqsz/wkhtmltopdf](https://hub.docker.com/r/thearqsz/wkhtmlto
 $ docker run --rm -v $(pwd):/pdf thearqsz/wkhtmltopdf yourhtml.html yourpdf.pdf
 ```
 
+To check all possible parameters just run:
+``` bash
+$ docker run --rm -v $(pwd):/pdf thearqsz/wkhtmltopdf --help
+```
+
 ## Licensing
 
 The project is freely available under the [GNU Lesser General Public License v3.0](LICENSE.md).
