@@ -2,6 +2,8 @@
 
 [![Build, Test & Push](https://github.com/TheArqsz/wkhtmltopdf/actions/workflows/build-test-push.yml/badge.svg?branch=main)](https://github.com/TheArqsz/wkhtmltopdf/actions/workflows/build-test-push.yml)
 
+Repository for [thearqsz/wkhtmltopdf](https://hub.docker.com/r/thearqsz/wkhtmltopdf) Docker image.
+
 ## Quick start
 
 1. Get your HTML file or remote URL
