@@ -1,6 +1,6 @@
 # Dockerized [wkhtmltopdf](https://wkhtmltopdf.org/)
 
-![Build & Test](https://github.com/TheArqsz/wkhtmltopdf/workflows/Build,%20Test%20&%20Push/badge.svg?branch=master)
+[![Build, Test & Push](https://github.com/TheArqsz/wkhtmltopdf/actions/workflows/build-test-push.yml/badge.svg?branch=main)](https://github.com/TheArqsz/wkhtmltopdf/actions/workflows/build-test-push.yml)
 
 ## Quick start
 
