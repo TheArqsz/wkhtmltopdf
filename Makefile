@@ -5,4 +5,4 @@ build:
 	docker build $(BUILD_ARGS) -t thearqsz/wkhtmltopdf:$(VERSION) .
 
 test:
-	VERSION=$(VERSION) ./tests/testpdf.sh
+	chmod +x ./tests/testpdf.sh && VERSION=$(VERSION) ./tests/testpdf.sh
